@@ -1,0 +1,281 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Cho 1 điểm có  tọa độ A(x,y) và 3 điểm là tọa độ của 1 hình tam giác, tạo hàm kiểm tra xem hình tam giác được tạo từ 3 điểm kia có chứa A không."
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="410dp"
+        android:layout_width="375dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="220dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="375dp"
+                android:layout_height="30dp"
+                android:text="Nhập tọa độ điểm A"
+                android:textSize="20sp"
+                android:gravity="left"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/Ax"
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent"
+                    android:hint="x"
+                    android:maxLines="50"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Ay"
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent"
+                    android:hint="y"
+                    android:maxLines="50"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="375dp"
+                android:layout_height="30dp"
+                android:text="Nhập tọa độ đỉnh 1 của tam giác"
+                android:textSize="20sp"
+                android:gravity="left"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/Bx"
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent"
+                    android:hint="x"
+                    android:maxLines="50"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/By"
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent"
+                    android:hint="y"
+                    android:maxLines="50"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="375dp"
+                android:layout_height="30dp"
+                android:text="Nhập tọa độ đỉnh 2 của tam giác"
+                android:textSize="20sp"
+                android:gravity="left"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/Cx"
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent"
+                    android:hint="x"
+                    android:maxLines="50"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Cy"
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent"
+                    android:hint="y"
+                    android:maxLines="50"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="375dp"
+                android:layout_height="30dp"
+                android:text="Nhập tọa độ đỉnh 3 của tam giác"
+                android:textSize="20sp"
+                android:gravity="left"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/Dx"
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent"
+                    android:hint="x"
+                    android:maxLines="50"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Dy"
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent"
+                    android:hint="y"
+                    android:maxLines="50"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/done_btn2"
+            android:layout_width="200dp"
+            style="@android:style/Widget.Button"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:text="Lưu"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:onClick="saveNote"
+            android:background="@drawable/btn_2"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="650dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_blue"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
