@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.test_1.R
 
@@ -25,19 +26,37 @@ class ExampleFragment2 : Fragment() {
     }
 
     private fun checkPointInTriangle() {
-        val ax = view?.findViewById<EditText>(R.id.Ax)?.text.toString().toDouble()
-        val ay = view?.findViewById<EditText>(R.id.Ay)?.text.toString().toDouble()
-        val bx = view?.findViewById<EditText>(R.id.Bx)?.text.toString().toDouble()
-        val by = view?.findViewById<EditText>(R.id.By)?.text.toString().toDouble()
-        val cx = view?.findViewById<EditText>(R.id.Cx)?.text.toString().toDouble()
-        val cy = view?.findViewById<EditText>(R.id.Cy)?.text.toString().toDouble()
-        val dx = view?.findViewById<EditText>(R.id.Dx)?.text.toString().toDouble()
-        val dy = view?.findViewById<EditText>(R.id.Dy)?.text.toString().toDouble()
+        val axText = view?.findViewById<EditText>(R.id.Ax)?.text.toString()
+        val ayText = view?.findViewById<EditText>(R.id.Ay)?.text.toString()
+        val bxText = view?.findViewById<EditText>(R.id.Bx)?.text.toString()
+        val byText = view?.findViewById<EditText>(R.id.By)?.text.toString()
+        val cxText = view?.findViewById<EditText>(R.id.Cx)?.text.toString()
+        val cyText = view?.findViewById<EditText>(R.id.Cy)?.text.toString()
+        val dxText = view?.findViewById<EditText>(R.id.Dx)?.text.toString()
+        val dyText = view?.findViewById<EditText>(R.id.Dy)?.text.toString()
+
+        if (axText.isEmpty() || ayText.isEmpty() ||
+            bxText.isEmpty() || byText.isEmpty() ||
+            cxText.isEmpty() || cyText.isEmpty() ||
+            dxText.isEmpty() || dyText.isEmpty()) {
+            Toast.makeText(context, "Vui lòng nhập đầy đủ tọa độ các điểm.", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        val ax = axText.toDouble()
+        val ay = ayText.toDouble()
+        val bx = bxText.toDouble()
+        val by = byText.toDouble()
+        val cx = cxText.toDouble()
+        val cy = cyText.toDouble()
+        val dx = dxText.toDouble()
+        val dy = dyText.toDouble()
 
         val isInside = isPointInTriangle(ax, ay, bx, by, cx, cy, dx, dy)
         val answerTextView: TextView? = view?.findViewById(R.id.answer)
         answerTextView?.text = if (isInside) "Điểm A nằm trong tam giác đã cho" else "Điểm A không nằm trong tam giác đã cho"
     }
+
 
     private fun isPointInTriangle(ax: Double, ay: Double, bx: Double, by: Double, cx: Double, cy: Double, dx: Double, dy: Double): Boolean {
         val area = triangleArea(bx, by, cx, cy, dx, dy)
