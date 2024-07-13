@@ -1,11 +1,12 @@
-package com.example.test_1
+package com.example.test_1.view
 
 import android.os.Bundle
-import android.widget.Button
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.test_1.Example1.ExampleFragment1
-import com.example.test_1.Example1.ExampleFragment2
+import com.example.test_1.R
+import com.example.test_1.ui.example1.ExampleFragment1
+import com.example.test_1.ui.example2.ExampleFragment2
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,14 +14,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button1: Button = findViewById(R.id.button1)
-        val button2: Button = findViewById(R.id.button2)
+        val bai1: LinearLayout = findViewById(R.id.bai1)
+        val bai2: LinearLayout = findViewById(R.id.bai2)
 
-        button1.setOnClickListener {
+        bai1.setOnClickListener {
             replaceFragment(ExampleFragment1())
         }
 
-        button2.setOnClickListener {
+        bai2.setOnClickListener {
             replaceFragment(ExampleFragment2())
         }
     }

@@ -4,13 +4,13 @@
     android:id="@+id/main1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".view.MainActivity"
     android:background="@drawable/background">
 
     <LinearLayout
         android:layout_width="375dp"
         android:layout_height="70dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:gravity="center"
-        android:layout_marginTop="220dp">
+        android:layout_marginTop="80dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -85,13 +85,13 @@
 
     <LinearLayout
         android:layout_width="375dp"
-        android:layout_height="420dp"
+        android:layout_height="450dp"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:gravity="center"
-        android:layout_marginTop="420dp">
+        android:layout_marginTop="300dp">
 
         <ListView
             android:id="@+id/listString"
