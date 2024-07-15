@@ -1,4 +1,3 @@
-// ExampleFragment2.kt
 package com.example.test_1.ui.example2
 
 import android.os.Bundle

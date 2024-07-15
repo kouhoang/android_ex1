@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bai1"
+        android:title="Bài 1"
+        android:icon="@drawable/ex1_btn"
+        />
+    <item
+        android:id="@+id/bai2"
+        android:title="Bài 2"
+        android:icon="@drawable/ex2_btn"
+        />
+    <item
+        android:id="@+id/bai3"
+        android:title="Bài 3"
+        android:icon="@drawable/circle_avt"
+        />
+
+</menu>

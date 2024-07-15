@@ -1,4 +1,3 @@
-// Triangle.kt
 package com.example.test_1.model
 
 data class Triangle(

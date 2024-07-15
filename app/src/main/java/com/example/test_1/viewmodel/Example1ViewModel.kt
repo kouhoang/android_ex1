@@ -1,4 +1,3 @@
-// ExampleViewModel1.kt
 package com.example.test_1.ui.example1
 
 import androidx.lifecycle.LiveData
