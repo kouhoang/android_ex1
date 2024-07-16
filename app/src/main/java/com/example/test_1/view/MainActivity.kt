@@ -1,6 +1,5 @@
 package com.example.test_1.view
 
-import ExampleFragment3
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -29,6 +28,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.bai3 -> {
                     replaceFragment(ExampleFragment3())
+                    true
+                }
+                R.id.bai4 -> {
+                    replaceFragment(TriangleFragment())
                     true
                 }
                 else -> false

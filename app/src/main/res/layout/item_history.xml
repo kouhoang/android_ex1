@@ -5,17 +5,23 @@
     android:orientation="horizontal"
     android:padding="16dp">
 
-    <ImageView
-        android:id="@+id/historyIcon"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/historyStatus"
+        android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:layout_marginRight="16dp"
-        android:contentDescription="@string/icon_description" />
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:gravity="start"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold|italic"/>
 
     <TextView
         android:id="@+id/historyTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:gravity="start"
+        android:fontFamily="sans-serif-condensed-medium"/>
 </LinearLayout>

@@ -57,6 +57,5 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.databinding:databinding-runtime:7.1.0")
     implementation("androidx.core:core-ktx:1.7.0")
-
-
+    implementation("com.codesgood:justifiedtextview:1.1.0")
 }

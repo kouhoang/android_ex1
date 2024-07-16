@@ -8,13 +8,13 @@
     android:background="@drawable/background">
 
     <LinearLayout
-        android:layout_width="375dp"
+        android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="20dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
 
         <TextView
             android:id="@+id/textView"
@@ -23,16 +23,18 @@
             android:layout_gravity="left"
             android:text="Cho 1 chuỗi String, in ra số lần xuất hiện của mỗi kí tự trong chuỗi."
             android:textSize="22sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:justificationMode="inter_word"
             />
     </LinearLayout>
 
     <LinearLayout
         android:layout_height="200dp"
-        android:layout_width="375dp"
+        android:layout_width="match_parent"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:gravity="center"
         android:layout_marginTop="80dp">
 
@@ -58,7 +60,7 @@
 
             <EditText
                 android:id="@+id/titleEditText1"
-                android:layout_width="300dp"
+                android:layout_width="280dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="20dp"
                 android:hint="Nhập chuỗi ký tự"
@@ -78,18 +80,19 @@
                 android:contentDescription="Lưu input"
                 android:onClick="saveNote"
                 app:srcCompat="@drawable/done_btn"
-                tools:ignore="OnClick" />
+                tools:ignore="OnClick"
+                android:layout_marginStart="10dp"/>
 
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="375dp"
+        android:layout_width="match_parent"
         android:layout_height="450dp"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:gravity="center"
         android:layout_marginTop="300dp">
 

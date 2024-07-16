@@ -7,10 +7,12 @@ import com.example.test_1.model.Triangle
 
 class ExampleViewModel2 : ViewModel() {
 
+    // LiveData để lưu trữ thông tin về tam giác.
     private val _triangle = MutableLiveData<Triangle>()
     val triangle: LiveData<Triangle>
         get() = _triangle
 
+    // LiveData để lưu trữ kết quả kiểm tra điểm có nằm trong tam giác hay không.
     private val _isPointInsideTriangle = MutableLiveData<Boolean>()
     val isPointInsideTriangle: LiveData<Boolean>
         get() = _isPointInsideTriangle
@@ -19,14 +21,17 @@ class ExampleViewModel2 : ViewModel() {
         _triangle.value = Triangle(ax, ay, bx, by, cx, cy)
     }
 
+    // Kiểm tra điểm có nằm trong tam giác không
     fun checkPointInTriangle(dx: Double, dy: Double) {
         val triangle = _triangle.value ?: return
 
+        // Tính diện tích tam giác
         val area = triangleArea(triangle.bx, triangle.by, triangle.cx, triangle.cy, dx, dy)
         val area1 = triangleArea(triangle.ax, triangle.ay, triangle.bx, triangle.by, triangle.cx, triangle.cy)
         val area2 = triangleArea(triangle.ax, triangle.ay, triangle.cx, triangle.cy, dx, dy)
         val area3 = triangleArea(triangle.ax, triangle.ay, triangle.bx, triangle.by, dx, dy)
 
+        // Kiểm tra diện tích các tam giác bé có bằng tam giác to không.
         val isInside = area == area1 + area2 + area3
         _isPointInsideTriangle.value = isInside
     }

@@ -32,6 +32,7 @@ class ExampleFragment2 : Fragment() {
         return view
     }
 
+
     private fun checkPointInTriangle() {
         val axText = view?.findViewById<EditText>(R.id.Ax)?.text.toString()
         val ayText = view?.findViewById<EditText>(R.id.Ay)?.text.toString()
@@ -42,6 +43,7 @@ class ExampleFragment2 : Fragment() {
         val dxText = view?.findViewById<EditText>(R.id.Dx)?.text.toString()
         val dyText = view?.findViewById<EditText>(R.id.Dy)?.text.toString()
 
+        // Kiểm tra các tọa độ đã nhập có sót hay không.
         if (axText.isEmpty() || ayText.isEmpty() ||
             bxText.isEmpty() || byText.isEmpty() ||
             cxText.isEmpty() || cyText.isEmpty() ||

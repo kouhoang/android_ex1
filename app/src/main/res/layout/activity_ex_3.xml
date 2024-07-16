@@ -26,21 +26,24 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="16dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_settings"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+            android:layout_height="40dp"
             android:background="@drawable/button_background"
             android:drawableLeft="@drawable/ic_setting"
-            android:drawablePadding="8dp"
-            android:padding="16dp"
+            android:drawablePadding="4dp"
+            android:padding="8dp"
             android:text="Cài đặt"
             android:textColor="@android:color/black"
-            android:textSize="16sp"
-            android:layout_marginRight="20dp"/>
+            android:textSize="12sp"
+            android:layout_marginRight="8dp"
+            tools:layout_editor_absoluteX="187dp"
+            tools:layout_editor_absoluteY="212dp"
+            android:textStyle="bold"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -61,7 +64,8 @@
             android:src="@drawable/circle_avt"
             android:contentDescription="Your description here"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="20dp"
+            />
 
         <LinearLayout
             android:layout_width="250dp"
@@ -106,7 +110,8 @@
                         android:layout_weight="1"
                         android:text="Hồ sơ nhân viên"
                         android:textColor="@color/black"
-                        android:textSize="16dp"/>
+                        android:textSize="16dp"
+                        android:fontFamily="sans-serif"/>
 
                     <Button
                         android:id="@+id/button"
@@ -115,7 +120,8 @@
                         android:background="@drawable/navigate_next"
                         android:padding="16dp"
                         android:contentDescription="navigate_next"
-                        android:textColor="@android:color/white" />
+                        android:textColor="@android:color/white"
+                        android:layout_marginEnd="16dp"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -126,31 +132,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="200dp">
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        >
 
         <TextView
             android:id="@+id/hanhTrinh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hành trình"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textColor="@color/dark_blue"
-            android:layout_marginLeft="20dp"/>
+            android:fontFamily="sans-serif-condensed-medium"
+/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/historyRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/hanhTrinh"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"/>
+            android:layout_marginTop="10dp"/>
 
         <ProgressBar
             android:id="@+id/progressBar"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_centerInParent="true"
-            android:visibility="visible" />
+            android:visibility="visible"
+            />
     </RelativeLayout>
 
 

@@ -6,10 +6,12 @@ import androidx.lifecycle.ViewModel
 
 class ExampleViewModel1 : ViewModel() {
 
+    // LiveData để lưu trữ tần suất xuất hiện của kí tự
     private val _charFrequencyMap = MutableLiveData<Map<Char, Int>>()
     val charFrequencyMap: LiveData<Map<Char, Int>>
         get() = _charFrequencyMap
 
+    // Tính toán tần suất ký tự trong một chuỗi đầu vào.
     fun calculateCharFrequency(inputString: String) {
         val map = mutableMapOf<Char, Int>()
 

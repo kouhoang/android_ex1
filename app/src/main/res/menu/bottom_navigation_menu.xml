@@ -12,7 +12,11 @@
     <item
         android:id="@+id/bai3"
         android:title="Bài 3"
-        android:icon="@drawable/circle_avt"
+        android:icon="@drawable/ex3_btn"
         />
-
+    <item
+        android:id="@+id/bai4"
+        android:title="Bài 4"
+        android:icon="@drawable/ex4_btn"
+        />
 </menu>

@@ -8,12 +8,12 @@
     android:background="@drawable/background">
 
     <LinearLayout
-        android:layout_width="375dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
@@ -22,17 +22,19 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:text="Cho 1 điểm có  tọa độ A(x,y) và 3 điểm là tọa độ của 1 hình tam giác, tạo hàm kiểm tra xem hình tam giác được tạo từ 3 điểm kia có chứa A không."
-            android:textSize="20sp"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:justificationMode="inter_word"
             />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_height="410dp"
-        android:layout_width="375dp"
+        android:layout_height="420dp"
+        android:layout_width="match_parent"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:gravity="center"
         android:layout_marginTop="120dp">
 
@@ -245,18 +247,21 @@
             android:textStyle="bold"
             android:onClick="saveNote"
             android:background="@drawable/btn_2"
-            tools:ignore="OnClick" />
+            tools:ignore="OnClick"
+            android:layout_marginTop="10dp"/>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="375dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="530dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="540dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:gravity="center">
 
         <TextView
@@ -275,7 +280,8 @@
             android:textSize="25dp"
             android:layout_marginTop="5dp"
             android:textStyle="bold"
-            android:textColor="@color/dark_blue"/>
+            android:textColor="@color/dark_blue"
+            android:justificationMode="inter_word"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
