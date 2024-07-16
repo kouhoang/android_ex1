@@ -24,7 +24,7 @@ Dự án này được xây dựng theo mô hình MVVM (Model-View-ViewModel):
 ## Cài đặt
 1. **Clone repository**:
     ```bash
-    git clone https://github.com/kouhoang/intern_android_ex1.git
+    git clone https://github.com/kouhoang/android_ex1.git
     ```
 2. **Mở dự án trong Android Studio**:
     - Mở Android Studio.
