@@ -57,4 +57,4 @@ Dự án này được xây dựng theo mô hình MVVM (Model-View-ViewModel):
 - **Phản hồi**: Nếu có bất kỳ lỗi nào hoặc cần cải tiến, vui lòng tạo một issue trên GitHub.
 
 ## Tác giả
-- **Tên của bạn** - [username](https://github.com/kouhoang)
+- **Tên của bạn** - kouhoang(https://github.com/kouhoang)
