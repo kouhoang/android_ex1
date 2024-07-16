@@ -36,21 +36,22 @@ Dự án này được xây dựng theo mô hình MVVM (Model-View-ViewModel):
 
 ## Hướng dẫn sử dụng
 ### Fragment 1: Chuỗi ký tự
-- Nhập chuỗi ký tự vào TextField và nhấn nút "Đếm ký tự".
+- Nhập chuỗi ký tự vào TextField và nhấn nút ✅.
 - Kết quả sẽ hiển thị số lần xuất hiện của mỗi ký tự trong chuỗi.
 
 ### Fragment 2: Kiểm tra điểm trong tam giác
 - Nhập tọa độ của điểm A và ba điểm tạo thành tam giác.
-- Nhấn nút "Kiểm tra" để kiểm tra xem điểm A có nằm trong tam giác hay không.
+- Nhấn nút "Lưu" để kiểm tra xem điểm A có nằm trong tam giác hay không.
 - Kết quả sẽ hiển thị trên màn hình.
 
 ### Fragment 3: Đọc và hiển thị dữ liệu từ JSON
-- Khi mở fragment, dữ liệu từ tệp `profile.json` sẽ được đọc và hiển thị sau 2 giây.
+- Khi mở fragment, dữ liệu từ tệp `profile.json` sẽ được đọc và hiển thị sau 2 giây theo một giao diện đã có trước.
 
 ### Fragment 4: Tạo tam giác và kiểm tra điểm
 - Chạm vào màn hình ba lần để tạo tam giác.
 - Chạm lần thứ tư để tạo một điểm và kiểm tra xem điểm đó có nằm trong tam giác đã tạo hay không.
 - Kết quả sẽ hiển thị trên màn hình.
+- Bấm nút Reset để có thể thao tác lại từ đầu.
 
 ## Thông tin thêm
 - **Phản hồi**: Nếu có bất kỳ lỗi nào hoặc cần cải tiến, vui lòng tạo một issue trên GitHub.
