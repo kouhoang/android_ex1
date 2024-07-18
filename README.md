@@ -8,6 +8,7 @@ Bài tập này là một ứng dụng Android được phát triển bằng Kot
 - [Cài đặt](#cài-đặt)
 - [Hướng dẫn sử dụng](#hướng-dẫn-sử-dụng)
 - [Thông tin thêm](#thông-tin-thêm)
+- [Hình ảnh](#hình-ảnh)
 
 ## Tính năng
 1. **Chuỗi ký tự**: Hiển thị số lần xuất hiện của mỗi ký tự trong chuỗi.
