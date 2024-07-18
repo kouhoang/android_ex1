@@ -53,6 +53,12 @@ Dự án này được xây dựng theo mô hình MVVM (Model-View-ViewModel):
 - Kết quả sẽ hiển thị trên màn hình.
 - Bấm nút Reset để có thể thao tác lại từ đầu.
 
+## Hình ảnh
+![Fragment 1](screenshot/fragment1.png)
+![Fragment 2](screenshot/fragment2.png)
+![Fragment 3](screenshot/fragment3.png)
+![Fragment 4](screenshot/fragment4.png)
+
 ## Thông tin thêm
 - **Phản hồi**: Nếu có bất kỳ lỗi nào hoặc cần cải tiến, vui lòng tạo một issue trên GitHub.
 
