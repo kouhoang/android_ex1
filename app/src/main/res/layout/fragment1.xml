@@ -68,7 +68,7 @@
                 android:minWidth="48dp"
                 android:minHeight="48dp"
                 android:textColor="@color/dark_blue"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -81,7 +81,7 @@
                 android:onClick="saveNote"
                 app:srcCompat="@drawable/done_btn"
                 tools:ignore="OnClick"
-                android:layout_marginStart="10dp"/>
+                android:layout_marginStart="20dp"/>
 
         </LinearLayout>
     </LinearLayout>

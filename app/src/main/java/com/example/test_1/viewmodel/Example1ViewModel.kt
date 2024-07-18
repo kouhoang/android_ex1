@@ -15,11 +15,13 @@ class ExampleViewModel1 : ViewModel() {
     fun calculateCharFrequency(inputString: String) {
         val map = mutableMapOf<Char, Int>()
 
-        for (char in inputString) {
-            if (map.containsKey(char)) {
-                map[char] = map[char]!! + 1
-            } else {
-                map[char] = 1
+        for (char in inputString.toLowerCase()) { // Chuyển đổi ký tự về chữ thường
+            if (char.isLetter()) { // Chỉ xét các ký tự là chữ cái
+                if (map.containsKey(char)) {
+                    map[char] = map[char]!! + 1
+                } else {
+                    map[char] = 1
+                }
             }
         }
 

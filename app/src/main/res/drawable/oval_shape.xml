@@ -1,0 +1,10 @@
+<!-- res/drawable/oval_shape.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white"/> <!-- Màu nền -->
+    <corners android:radius="24dp"/> <!-- Bán kính góc để tạo hình bầu dục -->
+    <padding
+        android:left="16dp"
+        android:right="16dp"
+        android:top="8dp"
+        android:bottom="8dp"/>
+</shape>

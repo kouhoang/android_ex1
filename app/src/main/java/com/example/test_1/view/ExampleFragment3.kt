@@ -25,7 +25,7 @@ class ExampleFragment3 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.activity_ex_3, container, false)
+        val view = inflater.inflate(R.layout.fragment3, container, false)
 
         viewModel = ViewModelProvider(this).get(ExampleViewModel::class.java)
 

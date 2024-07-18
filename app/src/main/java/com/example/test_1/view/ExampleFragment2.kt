@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.test_1.R
-import com.example.test_1.model.Triangle
 
 class ExampleFragment2 : Fragment() {
 
@@ -22,7 +21,7 @@ class ExampleFragment2 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.activity_ex_2, container, false)
+        val view = inflater.inflate(R.layout.fragment2, container, false)
 
         viewModel = ViewModelProvider(this).get(ExampleViewModel2::class.java)
 
