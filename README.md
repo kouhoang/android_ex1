@@ -54,10 +54,10 @@ Dự án này được xây dựng theo mô hình MVVM (Model-View-ViewModel):
 - Bấm nút Reset để có thể thao tác lại từ đầu.
 
 ## Hình ảnh
-<img src="screenshot/fragment1.png" alt="Fragment 1" width="5%"/>
-<img src="screenshot/fragment2.png" alt="Fragment 2" width="5%"/>
-<img src="screenshot/fragment3.png" alt="Fragment 3" width="5%"/>
-<img src="screenshot/fragment4.png" alt="Fragment 4" width="5%"/>
+<img src="screenshot/fragment1.png" alt="Fragment 1" width="25%"/>
+<img src="screenshot/fragment2.png" alt="Fragment 2" width="25%"/>
+<img src="screenshot/fragment3.png" alt="Fragment 3" width="25%"/>
+<img src="screenshot/fragment4.png" alt="Fragment 4" width="25%"/>
 
 ## Thông tin thêm
 - **Phản hồi**: Nếu có bất kỳ lỗi nào hoặc cần cải tiến, vui lòng tạo một issue trên GitHub.
