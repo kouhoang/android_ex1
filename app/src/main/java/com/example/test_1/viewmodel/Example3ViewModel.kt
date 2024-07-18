@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import com.example.test_1.model.Profile
 import com.google.gson.Gson
 
-class ExampleViewModel : ViewModel() {
+class Example3ViewModel : ViewModel() {
 
     // LiveData lưu dữ liệu profile
     private val _profileData = MutableLiveData<Profile>()

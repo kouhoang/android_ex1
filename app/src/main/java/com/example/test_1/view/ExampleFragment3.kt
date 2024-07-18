@@ -14,12 +14,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test_1.R
 import com.example.test_1.adapter.HistoryAdapter
-import com.example.test_1.viewmodel.ExampleViewModel
+import com.example.test_1.viewmodel.Example3ViewModel
 import java.io.IOException
 
 class ExampleFragment3 : Fragment() {
 
-    private lateinit var viewModel: ExampleViewModel
+    private lateinit var viewModel: Example3ViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,7 +27,7 @@ class ExampleFragment3 : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment3, container, false)
 
-        viewModel = ViewModelProvider(this).get(ExampleViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(Example3ViewModel::class.java)
 
         // Debug không tìm thấy file
         try {
