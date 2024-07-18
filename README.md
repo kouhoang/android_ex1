@@ -8,6 +8,7 @@ Bài tập này là một ứng dụng Android được phát triển bằng Kot
 - [Cài đặt](#cài-đặt)
 - [Hướng dẫn sử dụng](#hướng-dẫn-sử-dụng)
 - [Thông tin thêm](#thông-tin-thêm)
+- [Hình ảnh](#hình-ảnh)
 
 ## Tính năng
 1. **Chuỗi ký tự**: Hiển thị số lần xuất hiện của mỗi ký tự trong chuỗi.
@@ -52,6 +53,12 @@ Dự án này được xây dựng theo mô hình MVVM (Model-View-ViewModel):
 - Chạm lần thứ tư để tạo một điểm và kiểm tra xem điểm đó có nằm trong tam giác đã tạo hay không.
 - Kết quả sẽ hiển thị trên màn hình.
 - Bấm nút Reset để có thể thao tác lại từ đầu.
+
+## Hình ảnh
+<img src="screenshot/fragment1.png" alt="Fragment 1" width="25%"/>
+<img src="screenshot/fragment2.png" alt="Fragment 2" width="25%"/>
+<img src="screenshot/fragment3.png" alt="Fragment 3" width="25%"/>
+<img src="screenshot/fragment4.png" alt="Fragment 4" width="25%"/>
 
 ## Thông tin thêm
 - **Phản hồi**: Nếu có bất kỳ lỗi nào hoặc cần cải tiến, vui lòng tạo một issue trên GitHub.
