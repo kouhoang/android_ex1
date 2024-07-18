@@ -59,6 +59,7 @@ Dự án này được xây dựng theo mô hình MVVM (Model-View-ViewModel):
 <img src="screenshot/fragment2.png" alt="Fragment 2" width="25%"/>
 <img src="screenshot/fragment3.png" alt="Fragment 3" width="25%"/>
 <img src="screenshot/fragment4.png" alt="Fragment 4" width="25%"/>
+<img src="screenshot/fragment4_2.png" alt="Fragment 4" width="25%"/>
 
 ## Thông tin thêm
 - **Phản hồi**: Nếu có bất kỳ lỗi nào hoặc cần cải tiến, vui lòng tạo một issue trên GitHub.
