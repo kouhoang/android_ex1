@@ -1,4 +1,4 @@
-package com.example.test_1.model
+package com.example.test_1.checktriangle
 
 data class Triangle(
     val ax: Double,

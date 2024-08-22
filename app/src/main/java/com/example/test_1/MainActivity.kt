@@ -1,11 +1,12 @@
-package com.example.test_1.view
+package com.example.test_1
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.test_1.R
-import com.example.test_1.ui.example1.ExampleFragment1
-import com.example.test_1.ui.example2.ExampleFragment2
+import com.example.test_1.LoadJson.LoadFragment
+import com.example.test_1.checkpointtriangle.TriangleFragment
+import com.example.test_1.stringcount.StringCountFragment
+import com.example.test_1.checktriangle.CheckTriangleFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -19,15 +20,15 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.bai1 -> {
-                    replaceFragment(ExampleFragment1())
+                    replaceFragment(StringCountFragment())
                     true
                 }
                 R.id.bai2 -> {
-                    replaceFragment(ExampleFragment2())
+                    replaceFragment(CheckTriangleFragment())
                     true
                 }
                 R.id.bai3 -> {
-                    replaceFragment(ExampleFragment3())
+                    replaceFragment(LoadFragment())
                     true
                 }
                 R.id.bai4 -> {

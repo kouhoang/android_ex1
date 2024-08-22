@@ -1,4 +1,4 @@
-package com.example.test_1.ui.example1
+package com.example.test_1.stringcount
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,9 +11,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.test_1.R
+import com.example.test_1.ui.example1.ExampleViewModel1
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class ExampleFragment1 : Fragment() {
+class StringCountFragment : Fragment() {
 
     private lateinit var titleEditText1: EditText
     private lateinit var doneBtn1: FloatingActionButton

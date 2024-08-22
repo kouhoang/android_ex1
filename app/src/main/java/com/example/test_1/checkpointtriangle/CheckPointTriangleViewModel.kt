@@ -1,25 +1,22 @@
-package com.example.demo_test.viewmodel
+package com.example.test_1.checkpointtriangle
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.test_1.model.Point
 
-class TriangleViewModel : ViewModel() {
+class CheckPointTriangleViewModel : ViewModel() {
 
-    // Danh sách các điểm của tam giác
     private val _points = MutableLiveData<MutableList<Point>>(mutableListOf())
     val points: LiveData<MutableList<Point>> = _points
 
-    // Điểm kiểm tra xem có nằm trong tam giác hay không
+    // Check point to see if it is inside the triangle or not
     private val _testPoint = MutableLiveData<Point?>()
     val testPoint: LiveData<Point?> = _testPoint
 
-    // Kết quả văn bản sau khi kiểm tra điểm
+    // Text results after checking points
     private val _resultText = MutableLiveData<String>()
     val resultText: LiveData<String> = _resultText
 
-    // Thêm một điểm vào danh sách tam giác
     fun addPoint(point: Point) {
         if (_points.value?.size ?: 0 < 3) {
             _points.value?.add(point)
@@ -30,14 +27,14 @@ class TriangleViewModel : ViewModel() {
         _points.value = _points.value
     }
 
-    // Reset lại tam giác
+    // Reset triangle
     fun resetTriangle() {
         _points.value?.clear()
         _testPoint.value = null
         _resultText.value = null
     }
 
-    // Kiểm tra xem điểm có nằm trong tam giác không
+    // Check if the point is inside the triangle
     private fun checkPointInTriangle() {
         val pts = _points.value ?: return
         if (pts.size == 3 && _testPoint.value != null) {
@@ -46,7 +43,7 @@ class TriangleViewModel : ViewModel() {
         }
     }
 
-    // Hàm xác định xem điểm có nằm trong tam giác không
+    // Function to determine if the point is inside the triangle
     private fun isPointInTriangle(pt: Point, v1: Point, v2: Point, v3: Point): Boolean {
         val d1 = sign(pt, v1, v2)
         val d2 = sign(pt, v2, v3)
@@ -56,7 +53,7 @@ class TriangleViewModel : ViewModel() {
         return !(hasNeg && hasPos)
     }
 
-    // Hướng của vectơ hình thành bởi ba điểm
+    // Direction of the vector formed by three points
     private fun sign(p1: Point, p2: Point, p3: Point): Float {
         return (p1.x - p3.x) * (p2.y - p3.y) - (p2.x - p3.x) * (p1.y - p3.y)
     }

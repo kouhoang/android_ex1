@@ -1,18 +1,17 @@
-package com.example.test_1.viewmodel
+package com.example.test_1.LoadJson
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.test_1.model.Profile
 import com.google.gson.Gson
 
-class Example3ViewModel : ViewModel() {
+class LoadViewModel : ViewModel() {
 
-    // LiveData lưu dữ liệu profile
+    // LiveData saves profile data
     private val _profileData = MutableLiveData<Profile>()
     val profileData: LiveData<Profile> get() = _profileData
 
-    // Chuyển đổi dữ liệu trong JSON thành đối tượng Profile và lưu vào LiveData.
+    // Convert data in JSON into Profile object and save to LiveData.
     fun loadProfileData(jsonString: String) {
         val profile = Gson().fromJson(jsonString, Profile::class.java)
         _profileData.postValue(profile)

@@ -1,4 +1,4 @@
-package com.example.test_1.view
+package com.example.test_1.LoadJson
 
 import android.os.Bundle
 import android.os.Handler
@@ -13,13 +13,12 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test_1.R
-import com.example.test_1.adapter.HistoryAdapter
-import com.example.test_1.viewmodel.Example3ViewModel
+import com.example.test_1.LoadJson.adapter.HistoryAdapter
 import java.io.IOException
 
-class ExampleFragment3 : Fragment() {
+class LoadFragment : Fragment() {
 
-    private lateinit var viewModel: Example3ViewModel
+    private lateinit var viewModel: LoadViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,11 +26,11 @@ class ExampleFragment3 : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment3, container, false)
 
-        viewModel = ViewModelProvider(this).get(Example3ViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(LoadViewModel::class.java)
 
-        // Debug không tìm thấy file
+        // Debug cannot find file
         try {
-            // Đọc nội dung từ file profile.json trong thư mục assets
+            // Read content from profile.json file in assets folder
             val jsonString = requireContext().assets.open("profile.json").bufferedReader().use {
                 it.readText()
             }
@@ -42,7 +41,7 @@ class ExampleFragment3 : Fragment() {
         }
 
         viewModel.profileData.observe(viewLifecycleOwner, Observer { profile ->
-            // Dùng Handler để trì hoãn hiển thị dữ liệu sau 2 giây
+            // Use Handler to delay displaying data after 2 seconds
             Handler(Looper.getMainLooper()).postDelayed({
                 view?.findViewById<TextView>(R.id.name)?.text = profile.full_name
                 view?.findViewById<TextView>(R.id.role)?.text = profile.position
@@ -52,7 +51,7 @@ class ExampleFragment3 : Fragment() {
                 recyclerView?.layoutManager = LinearLayoutManager(context)
                 recyclerView?.adapter = HistoryAdapter(profile.history)
 
-                // Hiển thị dữ liệu và ẩn ProgressBar
+                // Show data and hide ProgressBar
                 view?.findViewById<View>(R.id.progressBar)?.visibility = View.GONE
                 view?.findViewById<TextView>(R.id.name)?.visibility = View.VISIBLE
                 view?.findViewById<TextView>(R.id.role)?.visibility = View.VISIBLE

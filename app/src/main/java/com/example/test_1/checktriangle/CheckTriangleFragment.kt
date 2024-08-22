@@ -1,4 +1,4 @@
-package com.example.test_1.ui.example2
+package com.example.test_1.checktriangle
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,8 +12,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.test_1.R
+import com.example.test_1.ui.example2.ExampleViewModel2
 
-class ExampleFragment2 : Fragment() {
+class CheckTriangleFragment : Fragment() {
 
     private lateinit var viewModel: ExampleViewModel2
 
@@ -42,7 +43,7 @@ class ExampleFragment2 : Fragment() {
         val dxText = view?.findViewById<EditText>(R.id.Dx)?.text.toString()
         val dyText = view?.findViewById<EditText>(R.id.Dy)?.text.toString()
 
-        // Kiểm tra các tọa độ đã nhập có sót hay không.
+        // Check whether the entered coordinates are missing or not.
         if (axText.isEmpty() || ayText.isEmpty() ||
             bxText.isEmpty() || byText.isEmpty() ||
             cxText.isEmpty() || cyText.isEmpty() ||

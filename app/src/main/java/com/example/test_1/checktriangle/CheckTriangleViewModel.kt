@@ -3,16 +3,16 @@ package com.example.test_1.ui.example2
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.test_1.model.Triangle
+import com.example.test_1.checktriangle.Triangle
 
 class ExampleViewModel2 : ViewModel() {
 
-    // LiveData để lưu trữ thông tin về tam giác.
+    // LiveData to store information about the triangle.
     private val _triangle = MutableLiveData<Triangle>()
     val triangle: LiveData<Triangle>
         get() = _triangle
 
-    // LiveData để lưu trữ kết quả kiểm tra điểm có nằm trong tam giác hay không.
+    // LiveData to store the results of checking whether the point is inside the triangle or not.
     private val _isPointInsideTriangle = MutableLiveData<Boolean>()
     val isPointInsideTriangle: LiveData<Boolean>
         get() = _isPointInsideTriangle
@@ -21,17 +21,17 @@ class ExampleViewModel2 : ViewModel() {
         _triangle.value = Triangle(ax, ay, bx, by, cx, cy)
     }
 
-    // Kiểm tra điểm có nằm trong tam giác không
+    // Check if the point is inside the triangle
     fun checkPointInTriangle(dx: Double, dy: Double) {
         val triangle = _triangle.value ?: return
 
-        // Tính diện tích tam giác
+        // Calculate the area of ​​the triangle
         val area = triangleArea(triangle.bx, triangle.by, triangle.cx, triangle.cy, dx, dy)
         val area1 = triangleArea(triangle.ax, triangle.ay, triangle.bx, triangle.by, triangle.cx, triangle.cy)
         val area2 = triangleArea(triangle.ax, triangle.ay, triangle.cx, triangle.cy, dx, dy)
         val area3 = triangleArea(triangle.ax, triangle.ay, triangle.bx, triangle.by, dx, dy)
 
-        // Kiểm tra diện tích các tam giác bé có bằng tam giác to không.
+        // Check if the area of ​​the small triangle is equal to the large triangle.
         val isInside = area == area1 + area2 + area3
         _isPointInsideTriangle.value = isInside
     }

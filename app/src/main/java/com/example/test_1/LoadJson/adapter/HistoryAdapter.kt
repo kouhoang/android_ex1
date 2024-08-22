@@ -1,4 +1,4 @@
-package com.example.test_1.adapter
+package com.example.test_1.LoadJson.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test_1.R
-import com.example.test_1.model.HistoryItem
+import com.example.test_1.LoadJson.HistoryItem
 
 class HistoryAdapter(private val history: List<HistoryItem>) :
     RecyclerView.Adapter<HistoryAdapter.HistoryViewHolder>() {
@@ -28,17 +28,17 @@ class HistoryAdapter(private val history: List<HistoryItem>) :
      * @param position Vị trí của mục dữ liệu trong danh sách.
      */
     override fun onBindViewHolder(holder: HistoryViewHolder, position: Int) {
-        // Lấy đối tượng HistoryItem tại vị trí hiện tại.
+        // Get HistoryItem in current location.
         val item = history[position]
 
-        // Gán tiêu đề của mục lịch sử cho TextView.
+        // Assign the title of the history item to the TextView.
         holder.titleTextView.text = item.title
 
-        // Kiểm tra trạng thái của mục lịch sử để gán text phù hợp.
+        // Check the status of the history item to assign appropriate text.
         holder.statusTextView.text = if (item.is_up) "UP!" else "DOWN!"
     }
 
-    // Trả về số lượng history trong danh sách.
+    // Returns the number of histories in the list.
     override fun getItemCount(): Int {
         return history.size
     }

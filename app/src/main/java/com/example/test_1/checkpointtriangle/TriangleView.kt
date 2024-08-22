@@ -1,4 +1,4 @@
-package com.example.demo_test.view
+package com.example.test_1.checkpointtriangle
 
 import android.content.Context
 import android.graphics.Canvas
@@ -8,8 +8,6 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 import android.widget.TextView
-import com.example.demo_test.viewmodel.TriangleViewModel
-import com.example.test_1.model.Point
 
 class TriangleView(context: Context, attrs: AttributeSet) : View(context, attrs) {
 
@@ -33,10 +31,10 @@ class TriangleView(context: Context, attrs: AttributeSet) : View(context, attrs)
         strokeWidth = 10f
     }
 
-    private lateinit var viewModel: TriangleViewModel
+    private lateinit var viewModel: CheckPointTriangleViewModel
     private lateinit var answerTextView: TextView
 
-    fun setViewModel(viewModel: TriangleViewModel, answerTextView: TextView) {
+    fun setViewModel(viewModel: CheckPointTriangleViewModel, answerTextView: TextView) {
         this.viewModel = viewModel
         this.answerTextView = answerTextView
 
